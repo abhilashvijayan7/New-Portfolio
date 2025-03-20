@@ -7,5 +7,8 @@ import groupIcon from "../../src/assets/images/Group.png";
 import rect30 from "../../src/assets/images/Rectangle 30.png";
 import rect32 from "../../src/assets/images/Rectangle 32.png";
 import rect34 from "../../src/assets/images/Rectangle 34.png";
+import rect35 from "../../src/assets/images/Rectangle 35.png";
+import rect40 from "../../src/assets/images/Rectangle 40.png";
 
-export { logo, menu, fbIcon, instaIcon, linkedinIcon, groupIcon, rect30, rect32, rect34 };
+
+export { logo, menu, fbIcon, instaIcon, linkedinIcon, groupIcon, rect30, rect32, rect34,rect35,rect40 };

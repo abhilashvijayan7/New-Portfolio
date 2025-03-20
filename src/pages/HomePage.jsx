@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { logo, rect30, rect32, rect34 } from "../../src/assets/image";
 import PostCard from "../components/PostCard";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import FeaturedWorkCard from "../components/FeaturedWorkCard";
 
 function HomePage() {
@@ -57,8 +56,6 @@ function HomePage() {
 
   return (
     <div className="main-container">
-      <Header />
-      <main>
         <div className="container max-w-[327px] mx-auto lg:max-w-[854px] lg:mx-auto">
           <section className="profile-section mb-16 ">
             <div className="profile-content lg:flex lg:flex-row-reverse lg:gap-x-9 lg:items-start lg:px-0">
@@ -121,7 +118,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="featured-projects-section mx-[18px]  mb-[150px]  lg:mb-[83px] lg:flex lg:flex-col lg:gap-y-7">
+        <section className="featured-projects-section mx-[18px]   lg:flex lg:flex-col lg:gap-y-7">
           <div className="conatiner max-w-[339px] mx-auto lg:max-w-[856px] lg:mx-auto">
             <h2 className="section-title text-center text-[18px] my-6 lg:text-start lg:text-[22px] lg:text-[#21243D]">
               Featured Works
@@ -139,9 +136,7 @@ function HomePage() {
             ))}
           </div>
         </section>
-      </main>
 
-      <Footer />
     </div>
   );
 }

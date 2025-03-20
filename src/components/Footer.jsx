@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer flex flex-col items-center justify-center min-h-full py-[54px] lg:pt-0">
+    <footer className="footer flex flex-col items-center justify-center min-h-full py-[54px] lg:pt-0 mt-[150px]  lg:mt-[83px]">
       <div className="lg:flex lg:flex-col lg:items-center">
         <div className="footer-icons flex space-x-11 mb-[26px] lg:space-x-8">
           <img
