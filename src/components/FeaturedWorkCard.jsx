@@ -2,15 +2,15 @@ import React from "react";
 
 function FeaturedWorkCard({ image, title, year, category, description }) {
   return (
-    <div className="project-wrapper border-b border-[#E0E0E0] mb-4 lg:flex lg:items-start lg:gap-x-5 lg:mt-3">
-      <div className="project-image-container">
+    <div className="project-wrapper border-b border-[#E0E0E0] mb-4 pb-4 lg:flex lg:items-stretch lg:gap-x-5 lg:mt-3 lg:pb-4">
+      <div className="project-image-container lg:w-[246px] flex-shrink-0">
         <img
           src={image}
           alt={title}
-          className="project-image w-full lg:min-w-[246px]"
+          className="project-image w-full h-full object-cover"
         />
       </div>
-      <div className="project-details mb-5">
+      <div className="project-details flex-1 flex flex-col">
         <p className="project-title font-bold text-[24px] my-[16px] lg:mt-0">
           {title}
         </p>
@@ -22,7 +22,7 @@ function FeaturedWorkCard({ image, title, year, category, description }) {
             {category}
           </p>
         </div>
-        <p className="project-description text-[16px]">{description}</p>
+        <p className="project-description text-[16px] flex-grow">{description}</p>
       </div>
     </div>
   );
