@@ -7,54 +7,54 @@ function WorksPage() {
 
     const [featuredWorks, setFeaturedWorks] = useState([
         {
-          id: 1,
-          image: rect30,
-          title: "Designing Dashboards",
-          year: "2020",
-          category: "Dashboard",
-          description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        },
-        {
-          id: 2,
-          image: rect32,
-          title: "Vibrant Portraits of 2020",
-          year: "2020",
-          category: "Illustration",
-          description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        },
-        {
-          id: 3,
-          image: rect34,
-          title: "36 Days of Malayalam type",
-          year: "2018",
-          category: "Typography",
-          description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        },
-        {
-            id: 4,
-            image: rect35, 
-            title: "Components",
-            year: "2018",
-            category: "Components, Design",
+            id: 1,
+            image: rect30,
+            title: "Building a Full-Stack MERN Application",
+            year: "2024",
+            category: "Web Development",
             description:
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "A step-by-step guide to building a full-stack application using MongoDB, Express.js, React, and Node.js, covering authentication, state management, and deployment.",
+          },
+          {
+            id: 2,
+            image: rect32,
+            title: "Mastering API Integration with Fetch & Axios",
+            year: "2024",
+            category: "JavaScript, API",
+            description:
+              "Exploring how to efficiently fetch data from REST APIs using Fetch and Axios, handling errors, caching responses, and optimizing performance.",
+          },
+          {
+            id: 3,
+            image: rect34,
+            title: "Optimizing MongoDB Queries for Performance",
+            year: "2023",
+            category: "Database, NoSQL",
+            description:
+              "Learn how to structure MongoDB queries, apply indexing, aggregation, and optimize read and write operations for high-performance applications.",
+          },
+          {
+            id: 4,
+            image: rect35,
+            title: "Reusable React Components & Best Practices",
+            year: "2023",
+            category: "React, Frontend",
+            description:
+              "Creating modular and reusable React components using best practices such as props, state management, context API, and performance optimizations.",
           },
           {
             id: 5,
-            image: rect40, 
-            title: "Designing Landing pages",
-            year: "2020",
-            category: "Website",
+            image: rect40,
+            title: "Building a Scalable Node.js Backend",
+            year: "2024",
+            category: "Backend, Node.js",
             description:
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+              "Architecting a scalable and maintainable Node.js backend using Express, middleware, JWT authentication, and database connections with MongoDB.",
           },
       ]);
 
   return (
-    <div className='container max-w-[339px] mx-auto text-[#21243D] lg:max-w-[682px]'>
+    <div className='container max-w-[339px] mx-auto text-[#21243D] lg:max-w-[782px]'>
       <h1 className='text-[30px] font-bold mb-[18px]'>Work</h1>
       {featuredWorks.map((work) => (
               <FeaturedWorkCard

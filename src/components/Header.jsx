@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="container max-w-[370px] mx-auto lg:max-w-[1032px] lg:mx-auto">
+    <header className="container max-w-[370px] mx-auto lg:max-w-[1450px] lg:mx-auto">
       {/* Desktop Navigation */}
       <nav className="navbar hidden lg:block lg:mb-[145px]">
         <ul className="nav-list lg:flex justify-end lg:font-medium lg:text-[20px] lg:space-x-8 lg:pr-[60px] lg:pt-[27px]">
@@ -50,7 +50,7 @@ const Header = () => {
 
       {/* Mobile Menu Icon */}
       <div className="menu-icon flex justify-end pt-5 pr-4 mb-[33px] pb-1.5 lg:hidden">
-        <button onClick={() => setIsOpen(true)}>
+        <button onClick={() => setIsOpen(true)} className="hover:cursor-pointer">
           <img src={menu} alt="Menu Icon" />
         </button>
       </div>
@@ -63,7 +63,7 @@ const Header = () => {
       >
         {/* Close Button */}
         <button
-          className="text-black text-2xl absolute top-4 right-5"
+          className="text-black text-2xl absolute top-4 right-5 hover:cursor-pointer"
           onClick={() => setIsOpen(false)}
         >
           ✕
@@ -75,7 +75,7 @@ const Header = () => {
             <li>
               <Link
                 to="/"
-                className="text-xl font-bold block text-white bg-[#21243D] px-4 py-2 rounded-md transition-all duration-300 hover:bg-[#FF6464] hover:text-white"
+                className="text-xl font-bold block text-[#21243D]  px-4 py-2 rounded-md transition-all duration-300 hover:text-[#FF6464]"
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -84,7 +84,7 @@ const Header = () => {
             <li>
               <Link
                 to="/works"
-                className="text-xl font-bold block text-white bg-[#21243D] px-4 py-2 rounded-md transition-all duration-300 hover:bg-[#FF6464] hover:text-white"
+                className="text-xl font-bold block text-[#21243D]  px-4 py-2 rounded-md transition-all duration-300 hover:text-[#FF6464]"
                 onClick={() => setIsOpen(false)}
               >
                 Works
@@ -93,7 +93,7 @@ const Header = () => {
             <li>
               <Link
                 to="/blog"
-                className="text-xl font-bold block text-white bg-[#21243D] px-4 py-2 rounded-md transition-all duration-300 hover:bg-[#FF6464] hover:text-white"
+                className="text-xl font-bold block text-[#21243D] px-4 py-2 rounded-md transition-all duration-300 hover:text-[#FF6464]"
                 onClick={() => setIsOpen(false)}
               >
                 Blog
