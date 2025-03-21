@@ -34,7 +34,7 @@ const Footer = () => {
           />
         </div>
         <p className="footer-text text-[#21243D]">
-          © 2024 John Doe. All rights reserved.
+          Copyright ©2024 All rights reserved.
         </p>
       </div>
     </footer>
