@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FeaturedWorkCard from "../components/FeaturedWorkCard";
 import { useNavigate } from "react-router-dom";
-import { rect30, rect32, rect34, rect35, rect40 } from "../../src/assets/image";
+import { rect30, rect32, rect34, rect35, rect40,work1,work2,work3 } from "../../src/assets/image";
 
 function WorksPage() {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ function WorksPage() {
   const [featuredWorks, setFeaturedWorks] = useState([
     {
       id: 1,
-      image: rect30,
+      image: work1,
       title: "Building a Full-Stack MERN Application",
       year: "2024",
       category: "Web Development",
@@ -18,7 +18,7 @@ function WorksPage() {
     },
     {
       id: 2,
-      image: rect32,
+      image: work2,
       title: "Mastering API Integration with Fetch & Axios",
       year: "2024",
       category: "JavaScript, API",
@@ -27,7 +27,7 @@ function WorksPage() {
     },
     {
       id: 3,
-      image: rect34,
+      image: work3,
       title: "Optimizing MongoDB Queries for Performance",
       year: "2023",
       category: "Database, NoSQL",

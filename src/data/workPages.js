@@ -1,57 +1,53 @@
-import{rect4,rect5,rect6} from '../assets/image'
+import{rect4,rect5,rect6,work1,work1_1,work1_2,work2,work2_1,work2_2, work3, work3_1, work3_2} from '../assets/image'
 
 export const workPages = [
     {
       id: 1,
-      image: "rect30.jpg",
       title: "Building a Full-Stack MERN Application",
       year: "2024",
       category: "Web Development",
       description:
         "A step-by-step guide to building a full-stack application using MongoDB, Express.js, React, and Node.js, covering authentication, state management, and deployment.",
-      mainImage: rect4,
+      mainImage: work1,
       content: {
         heading1: "Introduction",
         heading2: "Understanding MERN Stack",
         text: "The MERN stack consists of MongoDB, Express.js, React, and Node.js. It allows developers to build full-stack applications using JavaScript.",
-        images: [rect5, rect6]
+        images: [work1_1, work1_2]
       }
     },
     {
       id: 2,
-      image: "rect32.jpg",
       title: "Mastering API Integration with Fetch & Axios",
       year: "2024",
       category: "JavaScript, API",
       description:
         "Exploring how to efficiently fetch data from REST APIs using Fetch and Axios, handling errors, caching responses, and optimizing performance.",
-        mainImage: rect4,
+        mainImage: work2,
         content: {
         heading1: "Using Fetch API",
         heading2: "Making GET and POST Requests",
         text: "Fetch API allows making network requests easily. It supports Promises and is widely used in JavaScript applications.",
-        images: [rect5, rect6]
+        images: [work2_1, work2_2]
       }
     },
     {
       id: 3,
-      image: "rect34.jpg",
       title: "Optimizing MongoDB Queries for Performance",
       year: "2023",
       category: "Database, NoSQL",
       description:
         "Learn how to structure MongoDB queries, apply indexing, aggregation, and optimize read and write operations for high-performance applications.",
-        mainImage: rect4,
+        mainImage: work3,
       content: {
         heading1: "Indexing in MongoDB",
         heading2: "Boosting Read Performance",
         text: "Indexes help MongoDB search faster by reducing the number of documents scanned during a query.",
-        images: [rect5, rect6]
+        images: [work3_1, work3_2]
       }
     },
     {
       id: 4,
-      image: "rect35.jpg",
       title: "Reusable React Components & Best Practices",
       year: "2023",
       category: "React, Frontend",
@@ -67,7 +63,6 @@ export const workPages = [
     },
     {
       id: 5,
-      image: "rect40.jpg",
       title: "Building a Scalable Node.js Backend",
       year: "2024",
       category: "Backend, Node.js",

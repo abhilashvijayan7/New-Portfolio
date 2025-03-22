@@ -12,6 +12,17 @@ import rect40 from "../../src/assets/images/Rectangle 40.png";
 import rect4 from "../../src/assets/images/Rectangle 4.png";
 import rect5 from "../../src/assets/images/Rectangle 5.png";
 import rect6 from "../../src/assets/images/Rectangle 6.png";
+import work1 from "../../src/assets/images/work1.png";
+import work1_1 from "../../src/assets/images/work1-1.webp";
+import work1_2 from "../../src/assets/images/work1-2.jpg";
+import work2 from "../../src/assets/images/work2.webp";
+import work2_1 from "../../src/assets/images/work2_1.png";
+import work2_2 from "../../src/assets/images/work2_2.jpg";
+import work3 from "../../src/assets/images/work3.png";
+import work3_1 from "../../src/assets/images/work3_1.png";
+import work3_2 from "../../src/assets/images/work3_2.webp";
 
 
-export { logo, menu, fbIcon, instaIcon, linkedinIcon, groupIcon, rect30, rect32, rect34,rect35,rect40,rect4 ,rect5,rect6};
+
+
+export { logo, menu, fbIcon, instaIcon, linkedinIcon, groupIcon, rect30, rect32, rect34,rect35,rect40,rect4 ,rect5,rect6,work1,work1_1,work1_2,work2,work2_1,work2_2,work3,work3_1,work3_2};
