@@ -9,6 +9,9 @@ import rect32 from "../../src/assets/images/Rectangle 32.png";
 import rect34 from "../../src/assets/images/Rectangle 34.png";
 import rect35 from "../../src/assets/images/Rectangle 35.png";
 import rect40 from "../../src/assets/images/Rectangle 40.png";
+import rect4 from "../../src/assets/images/Rectangle 4.png";
+import rect5 from "../../src/assets/images/Rectangle 5.png";
+import rect6 from "../../src/assets/images/Rectangle 6.png";
 
 
-export { logo, menu, fbIcon, instaIcon, linkedinIcon, groupIcon, rect30, rect32, rect34,rect35,rect40 };
+export { logo, menu, fbIcon, instaIcon, linkedinIcon, groupIcon, rect30, rect32, rect34,rect35,rect40,rect4 ,rect5,rect6};
