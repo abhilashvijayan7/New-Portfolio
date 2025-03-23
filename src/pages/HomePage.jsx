@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { logo, rect30, rect32, rect34 } from "../../src/assets/image";
+import {
+  logo,
+  rect30,
+  rect32,
+  rect34,
+  work1,
+  work2,
+  work3,
+  profilepic
+} from "../../src/assets/image";
 import PostCard from "../components/PostCard";
 
 import FeaturedWorkCard from "../components/FeaturedWorkCard";
@@ -8,30 +17,30 @@ function HomePage() {
   const [featuredWorks, setFeaturedWorks] = useState([
     {
       id: 1,
-      image: rect30,
-      title: "Building a MERN Stack Dashboard",
-      year: "2023",
-      category: "Full-Stack Development",
+      image: work1,
+      title: "Building a Full-Stack MERN Application",
+      year: "2024",
+      category: "Web Development",
       description:
-        "Designed and developed an interactive admin dashboard using React, Node.js, Express, and MongoDB. Implemented authentication, data visualization, and real-time updates.",
+        "A step-by-step guide to building a full-stack application using MongoDB, Express.js, React, and Node.js, covering authentication, state management, and deployment.",
     },
     {
       id: 2,
-      image: rect32,
-      title: "JavaScript & API Integrations",
-      year: "2023",
-      category: "Frontend Development",
+      image: work2,
+      title: "Mastering API Integration with Fetch & Axios",
+      year: "2024",
+      category: "JavaScript, API",
       description:
-        "Created a dynamic web application using JavaScript, Fetch API, and third-party services. Focused on API data handling, state management, and user-friendly UI components.",
+        "Exploring how to efficiently fetch data from REST APIs using Fetch and Axios, handling errors, caching responses, and optimizing performance.",
     },
     {
       id: 3,
-      image: rect34,
-      title: "MongoDB Aggregation & Schema Design",
-      year: "2022",
-      category: "Database & Backend",
+      image: work3,
+      title: "Optimizing MongoDB Queries for Performance",
+      year: "2023",
+      category: "Database, NoSQL",
       description:
-        "Developed optimized database schemas and aggregation pipelines for high-performance applications. Demonstrated efficient querying, indexing, and data transformation.",
+        "Learn how to structure MongoDB queries, apply indexing, aggregation, and optimize read and write operations for high-performance applications.",
     },
   ]);
 
@@ -50,9 +59,20 @@ function HomePage() {
       date: "15 Mar 2024",
       category: "JavaScript, Code Optimization",
       summary:
-        "Explore key principles of writing maintainable and efficient JavaScript code. Topics include ES6+ features, modularization, and performance optimizations.",
+        "Explore techniques for writing clean, efficient JavaScript. Learn ES6+ features, modularization, and performance optimization step by step.",
     },
   ]);
+
+  const handleDownloadResume = () => {
+    const resumeUrl = "/Abhilsh_M_CV.pdf";
+  const link = document.createElement("a");
+  link.href = resumeUrl;
+  link.target = "_blank"; 
+  link.rel = "noopener noreferrer"; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  };
 
   return (
     <div className="main-container">
@@ -61,9 +81,9 @@ function HomePage() {
           <div className="profile-content lg:flex lg:flex-row-reverse lg:gap-x-9 lg:items-start lg:px-0">
             <div className="profile-image-container flex justify-center  lg:px-0 lg:mt-0 lg:mb-0 lg:flex-shrink-0">
               <img
-                src={logo}
+                src={profilepic}
                 alt="Profile"
-                className="profile-image mb-[34px] max-w-[174.38px] lg:max-w-[200px]"
+                className="profile-image mb-[34px] max-w-[174.38px] lg:max-w-[200px] "
               />
             </div>
 
@@ -85,7 +105,10 @@ function HomePage() {
                 boundaries of web development!
               </p>
               <div className="flex justify-center">
-                <button className="download-resume-btn bg-[#FF6464] text-[#FFFFFF] w-[208px] h-[47px] font-medium text-[20px] rounded-[2px]">
+                <button
+                  className="download-resume-btn bg-[#FF6464] text-[#FFFFFF] w-[208px] h-[47px] font-medium text-[20px] rounded-[2px] cursor-pointer transition-colors duration-300 ease-in-out hover:text-[#333333] "
+                  onClick={handleDownloadResume}
+                >
                   Download Resume
                 </button>
               </div>
@@ -101,9 +124,9 @@ function HomePage() {
               <p className="post-title text-center text-[18px] font-normal py-5 lg:text-[22px]">
                 Recent Posts
               </p>
-              <button className="view-all-btn hidden lg:block lg:text-[#00A8CC]">
+              {/* <button className="view-all-btn hidden lg:block lg:text-[#00A8CC]">
                 View all
-              </button>
+              </button> */}
             </div>
             <div className="lg:flex lg:gap-x-3">
               {posts.map((post) => (

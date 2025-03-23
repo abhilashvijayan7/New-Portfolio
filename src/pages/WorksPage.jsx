@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FeaturedWorkCard from "../components/FeaturedWorkCard";
 import { useNavigate } from "react-router-dom";
-import { rect30, rect32, rect34, rect35, rect40,work1,work2,work3 } from "../../src/assets/image";
+import { rect30, rect32, rect34, rect35, rect40,work1,work2,work3, work4, work5 } from "../../src/assets/image";
 
 function WorksPage() {
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ function WorksPage() {
     },
     {
       id: 4,
-      image: rect35,
+      image: work4,
       title: "Reusable React Components & Best Practices",
       year: "2023",
       category: "React, Frontend",
@@ -45,7 +45,7 @@ function WorksPage() {
     },
     {
       id: 5,
-      image: rect40,
+      image: work5,
       title: "Building a Scalable Node.js Backend",
       year: "2024",
       category: "Backend, Node.js",

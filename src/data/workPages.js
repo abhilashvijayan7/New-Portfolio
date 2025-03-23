@@ -1,4 +1,4 @@
-import{rect4,rect5,rect6,work1,work1_1,work1_2,work2,work2_1,work2_2, work3, work3_1, work3_2} from '../assets/image'
+import{rect4,rect5,rect6,work1,work1_1,work1_2,work2,work2_1,work2_2, work3, work3_1, work3_2,work4,work4_1,work4_2, work5, work5_1, work5_2} from '../assets/image'
 
 export const workPages = [
     {
@@ -53,12 +53,12 @@ export const workPages = [
       category: "React, Frontend",
       description:
         "Creating modular and reusable React components using best practices such as props, state management, context API, and performance optimizations.",
-        mainImage: rect4,
+        mainImage: work4,
       content: {
         heading1: "Component Reusability",
         heading2: "Structuring Components for Reusability",
         text: "Breaking UI into small, reusable components enhances maintainability and scalability.",
-        images: [rect5, rect6]
+        images: [work4_1, work4_2]
       }
     },
     {
@@ -68,12 +68,12 @@ export const workPages = [
       category: "Backend, Node.js",
       description:
         "Architecting a scalable and maintainable Node.js backend using Express, middleware, JWT authentication, and database connections with MongoDB.",
-        mainImage: rect4,
+        mainImage: work5,
       content: {
         heading1: "Express Middleware",
         heading2: "Handling Requests Efficiently",
         text: "Middleware functions in Express help in logging, authentication, and modifying requests before reaching the route handler.",
-        images: [rect5, rect6]
+        images: [work5_1, work5_2]
       }
     }
   ];

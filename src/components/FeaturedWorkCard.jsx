@@ -7,7 +7,7 @@ function FeaturedWorkCard({ image, title, year, category, description }) {
         <img
           src={image}
           alt={title}
-          className="project-image w-full h-full object-cover"
+          className="project-image w-full h-full object-cover rounded-md"
         />
       </div>
       <div className="project-details flex-1 flex flex-col">
