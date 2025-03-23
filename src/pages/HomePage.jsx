@@ -7,7 +7,7 @@ import {
   work1,
   work2,
   work3,
-  profilepic
+  profilepic,
 } from "../../src/assets/image";
 import PostCard from "../components/PostCard";
 
@@ -65,13 +65,13 @@ function HomePage() {
 
   const handleDownloadResume = () => {
     const resumeUrl = "/Abhilsh_M_CV.pdf";
-  const link = document.createElement("a");
-  link.href = resumeUrl;
-  link.target = "_blank"; 
-  link.rel = "noopener noreferrer"; 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
